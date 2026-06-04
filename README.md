@@ -33,25 +33,40 @@ npm run start
 
 ```
 app/
-  layout.tsx          # Metadata, fonts, JSON-LD (Organization, WebSite, Service)
+  layout.tsx          # Metadata, viewport/theme, linked JSON-LD entity graph
   page.tsx            # Landing page composition
   globals.css         # Tailwind layers + brand utilities
+  opengraph-image.tsx # Dynamic 1200x630 branded OG image
+  twitter-image.tsx   # Re-uses the OG image for Twitter cards
+  manifest.ts         # PWA web manifest
   robots.ts           # robots.txt (AI crawlers explicitly allowed)
   sitemap.ts          # sitemap.xml
   components/          # Nav, Hero, Engines, Problem, Process, Services, Why, FAQ, CTA, Footer
 public/
-  logo.png            # Brand logo (OG image + apple-touch icon)
+  logo.png            # Brand logo (apple-touch icon)
   icon.svg            # Favicon (speech bubble + sparkle mark)
   llms.txt            # Machine-readable brand summary for AI crawlers
 ```
 
 ## SEO / GEO built in
 
-- Full Open Graph + Twitter metadata
-- JSON-LD structured data: Organization, WebSite, Service, FAQPage
-- `robots.txt` welcoming major AI crawlers (GPTBot, PerplexityBot, etc.)
-- `sitemap.xml` and `llms.txt`
+- Rich metadata: title templates, keywords, canonical, robots (max-snippet/-image-preview)
+- Dynamic Open Graph + Twitter card image (`/opengraph-image`)
+- Linked JSON-LD **@graph**: Organization/ProfessionalService, WebSite, WebPage,
+  Service (with OfferCatalog) — entities cross-referenced via `@id`
+- FAQPage structured data for rich results & AI answer extraction
+- `robots.txt` welcoming major AI crawlers (GPTBot, PerplexityBot, ClaudeBot, etc.)
+- `sitemap.xml`, `llms.txt`, and a PWA `manifest.webmanifest`
+- Security headers (HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy)
 - Semantic HTML, fast static rendering
+
+### After deploying
+
+1. Add the **getreferenced.co** domain in Vercel.
+2. Verify the domain in Google Search Console and paste the token into
+   `metadata.verification.google` in `app/layout.tsx`.
+3. Submit `https://getreferenced.co/sitemap.xml` in Search Console.
+4. Run an audit anytime with the `/seo` skill against the live URL.
 
 ## Contact
 
