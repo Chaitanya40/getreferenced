@@ -1,0 +1,24 @@
+# GetReferenced.co
+
+> GetReferenced.co is a Generative Engine Optimization (GEO) company that helps
+> brands get cited, referenced, and recommended by AI answer engines including
+> ChatGPT, Perplexity, Google AI Overviews, Gemini, and Microsoft Copilot.
+> Tagline: "Win the AI Search Era."
+
+## What we do
+- AI Visibility Audit: benchmark how AI engines mention a brand versus competitors.
+- Citation-Ready Content: structure content so LLMs can find, trust, and quote it.
+- Entity & Schema Optimization: structured data and knowledge-graph alignment.
+- Authority & Mention Building: grow off-site trust signals AI relies on.
+- AI Mention Monitoring: track citation frequency, sentiment, and share of voice.
+- llms.txt & AI Readiness: make sites machine-readable for AI crawlers.
+
+## Key facts
+- Category: Generative Engine Optimization (GEO) / Answer Engine Optimization (AEO).
+- Difference from SEO: SEO ranks pages in a list; GEO gets your brand quoted in AI answers.
+- Audience: brands that want to be recommended at the moment of decision in AI search.
+- Contact: hello@getreferenced.co
+- Website: https://getreferenced.co
+
+## Offer
+- Free AI visibility audit available on request via hello@getreferenced.co.
