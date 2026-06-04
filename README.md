@@ -68,7 +68,24 @@ public/
 3. Submit `https://getreferenced.co/sitemap.xml` in Search Console.
 4. Run an audit anytime with the `/seo` skill against the live URL.
 
-## Contact
+## Contact form (Web3Forms)
 
-Update the contact email (`hello@getreferenced.co`) in
-`app/components/CTA.tsx` and `app/components/Footer.tsx` if needed.
+The free-audit form (`app/components/ContactForm.tsx`) submits directly to
+[Web3Forms](https://web3forms.com) — no backend or server needed. To make it
+live:
+
+1. Go to **web3forms.com**, enter **hello@getreferenced.co**, and you'll be
+   emailed a free **access key** instantly (no account required). Submissions
+   from the form will be sent to that address.
+2. Add the key one of two ways:
+   - **Recommended:** in Vercel → **Settings → Environment Variables**, add
+     `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` = your key, then redeploy. _(Web3Forms
+     keys are public by design — safe to expose client-side.)_
+   - Or paste it directly into `ACCESS_KEY` at the top of
+     `app/components/ContactForm.tsx`.
+
+Until a real key is set, the form renders but submissions will return an error.
+
+The displayed contact email (`hello@getreferenced.co`) also appears in
+`app/components/CTA.tsx`, `app/components/Footer.tsx`, `public/llms.txt`, and the
+JSON-LD in `app/layout.tsx` — update there if it changes.
