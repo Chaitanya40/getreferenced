@@ -17,7 +17,7 @@ export function CTA() {
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:hello@getreferenced.co?subject=Free%20AI%20Visibility%20Audit&body=Hi%20GetReferenced%20team%2C%0A%0AI%27d%20like%20a%20free%20AI%20visibility%20audit%20for%3A%0A%0AWebsite%3A%20%0AIndustry%3A%20%0AMain%20competitors%3A%20%0A"
+              href="mailto:chaitanyaallu1605@gmail.com?subject=Free%20AI%20Visibility%20Audit&body=Hi%20GetReferenced%20team%2C%0A%0AI%27d%20like%20a%20free%20AI%20visibility%20audit%20for%3A%0A%0AWebsite%3A%20%0AIndustry%3A%20%0AMain%20competitors%3A%20%0A"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-brand-deep shadow-lg transition-all duration-200 hover:-translate-y-0.5"
             >
               Request my free audit
