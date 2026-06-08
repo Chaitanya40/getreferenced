@@ -4,6 +4,7 @@ import { Engines } from "./components/Engines";
 import { Problem } from "./components/Problem";
 import { Process } from "./components/Process";
 import { Services } from "./components/Services";
+import { Pricing } from "./components/Pricing";
 import { Why } from "./components/Why";
 import { FAQ } from "./components/FAQ";
 import { CTA } from "./components/CTA";
@@ -19,6 +20,7 @@ export default function Home() {
         <Problem />
         <Process />
         <Services />
+        <Pricing />
         <Why />
         <FAQ />
         <CTA />
