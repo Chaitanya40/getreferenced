@@ -4,11 +4,11 @@ import { useState } from "react";
 import { Wordmark } from "./Logo";
 
 const links = [
-  { href: "#how", label: "How it works" },
-  { href: "#services", label: "Services" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#why", label: "Why GEO" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#how", label: "How it works" },
+  { href: "/#services", label: "Services" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Nav() {
@@ -34,7 +34,7 @@ export function Nav() {
         </div>
 
         <div className="hidden md:block">
-          <a href="#contact" className="btn-primary">
+          <a href="/#contact" className="btn-primary">
             Get a free audit
           </a>
         </div>
@@ -68,7 +68,7 @@ export function Nav() {
                 {l.label}
               </a>
             ))}
-            <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-2">
+            <a href="/#contact" onClick={() => setOpen(false)} className="btn-primary mt-2">
               Get a free audit
             </a>
           </div>

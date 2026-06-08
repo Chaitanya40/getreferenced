@@ -22,10 +22,11 @@ export function Footer() {
                 Explore
               </h3>
               <ul className="mt-4 space-y-2.5 text-sm">
-                <li><a href="#how" className="text-ink-soft hover:text-ink">How it works</a></li>
-                <li><a href="#services" className="text-ink-soft hover:text-ink">Services</a></li>
-                <li><a href="#why" className="text-ink-soft hover:text-ink">Why GEO</a></li>
-                <li><a href="#faq" className="text-ink-soft hover:text-ink">FAQ</a></li>
+                <li><a href="/#how" className="text-ink-soft hover:text-ink">How it works</a></li>
+                <li><a href="/#services" className="text-ink-soft hover:text-ink">Services</a></li>
+                <li><a href="/#pricing" className="text-ink-soft hover:text-ink">Pricing</a></li>
+                <li><a href="/blog" className="text-ink-soft hover:text-ink">Blog</a></li>
+                <li><a href="/#faq" className="text-ink-soft hover:text-ink">FAQ</a></li>
               </ul>
             </div>
             <div>
@@ -33,7 +34,7 @@ export function Footer() {
                 Get started
               </h3>
               <ul className="mt-4 space-y-2.5 text-sm">
-                <li><a href="#contact" className="text-ink-soft hover:text-ink">Free audit</a></li>
+                <li><a href="/#contact" className="text-ink-soft hover:text-ink">Free audit</a></li>
                 <li><a href="mailto:hello@getreferenced.co" className="text-ink-soft hover:text-ink">Contact</a></li>
               </ul>
             </div>

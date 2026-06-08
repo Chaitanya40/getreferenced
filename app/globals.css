@@ -47,3 +47,55 @@ body {
   background-image: radial-gradient(circle at 1px 1px, rgba(14, 42, 51, 0.06) 1px, transparent 0);
   background-size: 32px 32px;
 }
+
+/* Long-form article typography (blog posts) */
+.article-prose {
+  @apply text-[1.0625rem] leading-8 text-ink-soft;
+}
+.article-prose > * + * {
+  margin-top: 1.4rem;
+}
+.article-prose h2 {
+  @apply mt-12 text-2xl font-bold tracking-tight text-ink sm:text-3xl;
+  scroll-margin-top: 6rem;
+}
+.article-prose h3 {
+  @apply mt-9 text-xl font-semibold text-ink;
+  scroll-margin-top: 6rem;
+}
+.article-prose a {
+  @apply font-medium text-brand-deep underline decoration-brand-teal/30 underline-offset-2 transition-colors hover:decoration-brand-teal;
+}
+.article-prose strong {
+  @apply font-semibold text-ink;
+}
+.article-prose ul {
+  @apply list-disc space-y-2.5 pl-6;
+}
+.article-prose ol {
+  @apply list-decimal space-y-2.5 pl-6;
+}
+.article-prose li {
+  @apply leading-8;
+}
+.article-prose li::marker {
+  color: #1e7488;
+}
+.article-prose blockquote {
+  @apply rounded-r-lg border-l-4 border-brand-teal/50 bg-mist py-3 pl-5 pr-4;
+}
+.article-prose blockquote p {
+  margin: 0;
+}
+.article-prose code {
+  @apply rounded bg-mist px-1.5 py-0.5 text-[0.875em] font-medium text-brand-deep;
+}
+.article-prose pre {
+  @apply overflow-x-auto rounded-xl bg-ink p-5 text-sm leading-6 text-white/90;
+}
+.article-prose pre code {
+  @apply bg-transparent p-0 text-white/90;
+}
+.article-prose hr {
+  @apply my-10 border-ink/10;
+}
