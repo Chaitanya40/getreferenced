@@ -5,7 +5,7 @@ const bundles = [
     note: "one-time",
     tagline: "Get machine-readable, fast.",
     features: [
-      "LocalBusiness / Dentist schema markup",
+      "LocalBusiness schema markup",
       "llms.txt for AI crawlers",
       "robots.txt tuned for GPTBot, PerplexityBot & co.",
       "Meta titles & descriptions rewritten",
