@@ -2,32 +2,33 @@ export function Problem() {
   return (
     <section className="container-px py-20 lg:py-28">
       <div className="mx-auto max-w-3xl text-center">
-        <span className="eyebrow">The shift</span>
+        <span className="eyebrow">Why now</span>
         <h2 className="mt-5 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-          Search didn&rsquo;t die. It started answering.
+          The way people search is changing fast
         </h2>
         <p className="mt-5 text-lg leading-relaxed text-ink-muted">
-          People no longer click through a list of links — they ask a question
-          and trust the answer. If AI doesn&rsquo;t mention your brand in that
-          answer, you&rsquo;re invisible at the exact moment of decision. Classic
-          SEO ranks pages. <span className="font-semibold text-ink">GEO gets
-          you quoted.</span>
+          More buyers are asking ChatGPT and Google&rsquo;s AI{" "}
+          <span className="font-semibold text-ink">&ldquo;who&rsquo;s the best
+          [your service] in Hyderabad?&rdquo;</span> — and getting one or two
+          recommendations, not a page of ten. If your business isn&rsquo;t set up
+          to be that recommendation, your competitor will be. It&rsquo;s far
+          easier to get ahead today than to catch up later.
         </p>
       </div>
 
       <div className="mt-14 grid gap-6 md:grid-cols-3">
         {[
           {
-            t: "Traffic is leaking",
-            d: "Zero-click answers now resolve the majority of searches. Your hard-won rankings never get seen.",
+            t: "Fewer clicks, fewer chances",
+            d: "AI now answers the question directly, so customers see only a couple of businesses. If you’re not one of them, you’re invisible.",
           },
           {
-            t: "Competitors get cited",
-            d: "AI confidently recommends a handful of brands per query. Right now, that may not include you.",
+            t: "Competitors get recommended",
+            d: "AI confidently names a handful of businesses per question. Right now, that may not include you.",
           },
           {
-            t: "You can't see it",
-            d: "AI answers are personalized and ephemeral. Without monitoring, you have no idea what's being said about you.",
+            t: "You can’t see what’s said",
+            d: "Without tracking, you have no idea whether AI is recommending you, ignoring you, or sending customers elsewhere.",
           },
         ].map((c) => (
           <div key={c.t} className="card">

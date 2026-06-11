@@ -10,24 +10,24 @@ export function Hero() {
         <div className="animate-fade-up">
           <span className="eyebrow">
             <span className="h-1.5 w-1.5 rounded-full bg-brand-green" />
-            Generative Engine Optimization
+            SEO + AI search for Hyderabad businesses
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Win the{" "}
-            <span className="text-gradient">AI search</span> era.
+            Get found by more customers — on{" "}
+            <span className="text-gradient">Google &amp; AI search</span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-muted">
-            Your customers are asking ChatGPT, Perplexity, Gemini, and Google AI
-            Overviews instead of scrolling ten blue links. We make sure the
-            answer they get{" "}
-            <span className="font-semibold text-ink">references you</span>.
+            Whether your next customer searches Google, opens Maps, or asks
+            ChatGPT for a recommendation, we make sure your business{" "}
+            <span className="font-semibold text-ink">shows up</span>. More
+            visibility, more inquiries, more business.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#contact" className="btn-primary">
-              Get your free AI visibility audit
+              Get my free visibility audit
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                 <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -37,18 +37,37 @@ export function Hero() {
             </a>
           </div>
 
-          <dl className="mt-12 grid max-w-md grid-cols-3 gap-6">
+          <p className="mt-3 text-sm text-ink-muted">
+            Free. No obligation. See exactly where you&rsquo;re losing customers.
+          </p>
+
+          <ul className="mt-10 grid max-w-lg gap-3.5">
             {[
-              { v: "60%+", l: "of searches now end without a click" },
-              { v: "5 engines", l: "tracked for your brand mentions" },
-              { v: "Citation-first", l: "content built to be quoted" },
-            ].map((s) => (
-              <div key={s.l}>
-                <dt className="text-2xl font-bold text-ink">{s.v}</dt>
-                <dd className="mt-1 text-xs leading-snug text-ink-muted">{s.l}</dd>
-              </div>
+              {
+                t: "Show up where buyers look now",
+                d: "Google, Maps, and AI tools like ChatGPT, Gemini & Perplexity.",
+              },
+              {
+                t: "Turn searches into inquiries",
+                d: "More calls, WhatsApp messages, and walk-ins — not just traffic.",
+              },
+              {
+                t: "Stay ahead of competitors",
+                d: "Most local businesses aren’t ready for AI search yet. Get there first.",
+              },
+            ].map((b) => (
+              <li key={b.t} className="flex items-start gap-3">
+                <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-gradient text-white">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <path d="M20 6 9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
+                <span className="text-sm leading-snug text-ink-muted">
+                  <span className="font-semibold text-ink">{b.t}</span> — {b.d}
+                </span>
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
 
         {/* Simulated AI answer with a citation to the brand */}
@@ -66,8 +85,8 @@ export function Hero() {
               </div>
 
               <p className="mt-4 text-sm font-medium text-ink-muted">
-                &ldquo;What&rsquo;s the best solution for{" "}
-                <span className="text-ink">my industry</span>?&rdquo;
+                &ldquo;Who&rsquo;s the best{" "}
+                <span className="text-ink">[your service]</span> in Hyderabad?&rdquo;
               </p>
 
               <div className="mt-4 space-y-2.5">

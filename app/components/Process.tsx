@@ -1,23 +1,18 @@
 const steps = [
   {
     n: "01",
-    t: "Audit",
-    d: "We benchmark how often — and how — AI engines mention you today across the questions your buyers actually ask. You get a clear visibility scorecard versus your competitors.",
+    t: "Free audit",
+    d: "We check how you currently show up on Google and AI tools — and where you’re invisible. You get a clear, plain-English report on what’s costing you customers.",
   },
   {
     n: "02",
-    t: "Engineer",
-    d: "We restructure content, entities, and structured data so models can find, trust, and quote you: citation-ready passages, schema, authority signals, and the facts AI needs.",
+    t: "We fix it",
+    d: "We optimize your Google profile, website, listings, and content so search engines and AI tools confidently find and recommend you. Done for you — minimal effort on your side.",
   },
   {
     n: "03",
-    t: "Amplify",
-    d: "We build the third-party signals AI weighs most — mentions, reviews, listings, and references on the sources models pull from when they form an answer.",
-  },
-  {
-    n: "04",
-    t: "Monitor",
-    d: "We track your share of AI answers continuously and report what changed, where you're winning, and what to optimize next. GEO is a flywheel, not a one-off.",
+    t: "You get found",
+    d: "More of the right customers reach you — calls, WhatsApp messages, and walk-ins — and we track exactly where they’re coming from.",
   },
 ];
 
@@ -28,15 +23,15 @@ export function Process() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">How it works</span>
           <h2 className="mt-5 text-3xl font-bold tracking-tight text-ink sm:text-4xl">
-            A clear path to being the answer
+            Three simple steps to getting found
           </h2>
           <p className="mt-5 text-lg text-ink-muted">
-            A repeatable system that turns AI search from a threat into your most
-            durable acquisition channel.
+            No jargon, no long contracts. We show you the problem, fix it, and
+            track the customers it brings in.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
           {steps.map((s, i) => (
             <div key={s.n} className="card relative">
               <span className="text-sm font-bold text-gradient">{s.n}</span>
