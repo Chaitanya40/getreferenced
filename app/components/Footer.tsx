@@ -8,8 +8,9 @@ export function Footer() {
           <div className="max-w-sm">
             <Wordmark />
             <p className="mt-4 text-sm leading-relaxed text-ink-muted">
-              Generative Engine Optimization that gets your brand cited and
-              recommended by the AI engines your customers now ask first.
+              Get Referenced is a Generative Engine Optimization studio that gets
+              your brand cited and recommended by the AI engines your customers
+              now ask first.
             </p>
             <p className="mt-4 text-sm font-medium text-brand-deep">
               Win the AI Search Era.
